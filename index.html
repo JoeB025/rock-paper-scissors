@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="page-title">Rock, Paper, Scissors</h1>
+    </header>
+
+    <main>
+      <div class="rps-container">
+        <div class="rock-container">
+          <button id="rock-button-id" class="player-choice-buttons">
+            👊
+          </button>
+        </div>
+
+        <div class="paper-container">
+          <button id="paper-button-id" class="player-choice-buttons">
+            ✋
+          </button>
+        </div>
+
+        <div class="scissors-container">
+          <button id="scissors-button-id" class="player-choice-buttons">
+            ✌️
+          </button>
+        </div>
+      </div>
+
+      <div class="scoreboard-container">
+        <h1 class="scoreboard-heading">Scoreboard</h1>
+
+        <div class="scoreboard-boxes">
+          <div class="player-score-container">
+            <p>Players Score</p>
+            <p id="player-score">0</p>
+          </div>
+
+          <div class="draw-score-container">
+            <p>Draws</p>
+            <p id="total-ties">0</p>
+          </div>
+
+          <div class="computer-score-container">
+            <p>Computers Score</p>
+            <p id="computer-score">0</p>
+          </div>
+        </div>
+        <p id="message-display" class="message-display"></p> 
+        <div class="reset-button-container">
+          <p id="game-reset-message" class="game-reset-message-display"></p> 
+        <button class="game-reset-button" id="reset-score-button">
+          Reset Score
+        </button>
+      </div>
+      </div>
+
+     
+    </main>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
